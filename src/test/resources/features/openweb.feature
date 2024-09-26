@@ -1,6 +1,11 @@
 Feature: Abrir una pagina web
+
+  Background:
+    Given "David" abre el sitio web
+
+
   @pass
   Scenario: abrir con el navegador una pagina web
-    Given "David" abre el sitio web
-    When ingresa al navegador
-    Then Visualiza texto pagina "Pagina"
+    And validar el area de elementos
+    When seleccione una subfuncion
+    Then visualizara en la cabecera el nombre de la opcion elegida

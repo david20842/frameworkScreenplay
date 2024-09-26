@@ -9,4 +9,6 @@ public class Constants {
     public static final int TIME_SHORT = 5;
 
     public static final String TITLE = "DEMOQA";
+
+    public static final String ACTOR = "David";
 }
