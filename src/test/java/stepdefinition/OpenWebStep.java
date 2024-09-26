@@ -14,10 +14,6 @@ public class OpenWebStep {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @Given("{string} abre el sitio web")
-    public void abreElSitioWeb(String actor) {
-
-    }
     @When("ingresa al navegador")
     public void ingresaAlNavegador() {
 
