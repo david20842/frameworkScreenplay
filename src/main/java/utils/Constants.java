@@ -11,4 +11,7 @@ public class Constants {
     public static final String TITLE = "DEMOQA";
 
     public static final String ACTOR = "David";
+
+    public static final String REMEMBER_TEXT_BTN_SUB_ELEMENTS = "rememberTextBtnSubElemenst";
+
 }
