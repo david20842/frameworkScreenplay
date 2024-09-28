@@ -4,20 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static ui.HomeUI.TXT_RANDOM_NAME_BTN;
 
 @AllArgsConstructor
 @Slf4j
 public class ValidateElementsTextBtn implements Question<Boolean> {
-
-    private static final Logger log = LoggerFactory.getLogger(ValidateElementsTextBtn.class);
-
-    public static ValidateElementsTextBtn witchParams(String validTextSubElementBtn) {
-        return new ValidateElementsTextBtn();
-    }
 
     private String validTextSubElementBtn;
 
@@ -34,5 +26,8 @@ public class ValidateElementsTextBtn implements Question<Boolean> {
         return result;
     }
 
+    public static ValidateElementsTextBtn witchParams(String validTextSubElementBtn) {
+        return new ValidateElementsTextBtn(validTextSubElementBtn);
+    }
 
 }
